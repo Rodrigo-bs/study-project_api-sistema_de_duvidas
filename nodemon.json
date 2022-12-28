@@ -1,0 +1,10 @@
+{
+    "env": {
+        "PORT": 6000,
+        "EDUCATOR_ROUTE_PREFIX": "educator",
+        "SUBJECT_ROUTE_PREFIX": "subject",
+        "QUESTION_ROUTE_PREFIX": "question",
+        "TOPICS_ROUTE_PREFIX": "topics",
+        "SUGGESTION_ROUTE_PREFIX": "suggestion"
+    }
+}
