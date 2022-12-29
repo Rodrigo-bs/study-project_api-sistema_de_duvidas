@@ -1,15 +1,12 @@
 const { Router } = require('express');
 const dotenv = require('dotenv');
 
+const EducatorController = require('../controllers/EducatorController.js');
+
 dotenv.config();
-
-console.log(process.env.EDUCATOR_PREFIX);
-
 
 const routes = Router();
 
-routes.get('/', (req, res) => {
-    res.send('ok');
-});
+routes.get('/' + process.env.EDUCATOR_ROUTE_PREFIX + '/', EducatorController.getAllTheEducators);
 
 module.exports = routes;

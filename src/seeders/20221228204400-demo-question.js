@@ -6,75 +6,75 @@ module.exports = {
     const questions = [
       {
         content: 'como eu faço para usar o verbo na segunda pessoa do plural?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 6,
         educator_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'como eu faço para usar o adjetivo no sujeito?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 7,
         educator_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'O que é adjetivo?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 6,
         educator_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'O que é ecologia?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 1,
         educator_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'Como eu aplico os conceitos de ecologia na pratica?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 1,
         educator_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'Evolução, como eu analiso isso na pratica?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 2,
         educator_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'O que é Biomas?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 3,
         educator_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         content: 'Como diferenciar genética de outros fatores?',
-        date: Date.now(),
+        date: new Date(),
         status: 0,
         topic_id: 4,
         educator_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
     ];
 

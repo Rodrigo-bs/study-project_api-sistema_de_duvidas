@@ -6,18 +6,18 @@ module.exports = {
     const subjects = [
       {
         title: 'Biologia',
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Matemática',
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Português',
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ];
 

@@ -10,28 +10,28 @@ module.exports = {
         name: 'Paulo Findeiro dos Santos',
         email: 'paulo.findeiro@hotmail.com',
         user: 'paulo.findeiro',
-        password: crypto.hash('senha'),
+        password: await crypto.hash('senha'),
         subject_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Renato dos Santos Guimalhões',
         email: 'renatin@gmail.com',
         user: 'renatinho',
-        password: crypto.hash('senha'),
+        password: await crypto.hash('senha'),
         subject_id: 2,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Guilherme dos Santos Nobre',
         email: 'guilindo.nobregmail.com',
         user: 'nobre',
-        password: crypto.hash('senha'),
+        password: await crypto.hash('senha'),
         subject_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ];
 

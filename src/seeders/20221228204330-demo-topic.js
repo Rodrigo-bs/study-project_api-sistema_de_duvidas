@@ -7,56 +7,56 @@ module.exports = {
       {
         title: 'Ecologia',
         subject_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Evolução',
         subject_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Biomas',
         subject_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Genética e Biotecnologia',
         subject_id: 1,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Verbo',
         subject_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Adjetivo',
         subject_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Substantivo',
         subject_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'semântica',
         subject_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         title: 'Concordância',
         subject_id: 3,
-        createdAt: Date.now(),
-        updatedAt: Date.now()
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
     ];
     
