@@ -5,15 +5,15 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Subject extends Model {
     static associate(models) {
-      Subject.belongsTo(models.Educator, {
+      Subject.hasMany(models.Educator, {
         foreignKey: 'subject_id'
       });
 
-      Subject.belongsTo(models.Suggestion, {
+      Subject.hasMany(models.Suggestion, {
         foreignKey: 'subject_id'
       });
 
-      Subject.belongsTo(models.Topic, {
+      Subject.hasMany(models.Topic, {
         foreignKey: 'subject_id'
       });
 

@@ -5,11 +5,11 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Question extends Model {
     static associate(models) {
-      Question.hasOne(models.Topic, {
+      Question.belongsTo(models.Topic, {
         foreignKey: 'topic_id'
       });
 
-      Question.hasOne(models.Educator, {
+      Question.belongsTo(models.Educator, {
         foreignKey: 'educator_id'
       });
     }

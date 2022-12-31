@@ -5,11 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Suggestion extends Model {
     static associate(models) {
-      Suggestion.hasOne(models.Educator, {
-        foreignKey: 'subject_id'
-      });
-
-      Suggestion.belongsTo(models.Educator, {
+      Suggestion.belongsTo(models.Subject, {
         foreignKey: 'subject_id'
       });
     }
