@@ -95,6 +95,39 @@ class EducatorController {
             return res.status(500).json(error);
         }
     }
+
+    static async changeQuestionStatus(req, res) {
+        const educatorId = req.params.educatorID;
+        const questionId = req.params.questionID;
+
+        const status = req.body.status;
+
+        await models.Question.findOne({
+            where: {
+                id: questionId,
+                educator_id: educatorId
+            }
+        }).then(async (data) => {
+            if (!data)
+                return res.status(203).json({ code: 'e001', message: 'Invalid params' });
+            else if (status != 0 && status != 1)
+                return res.status(203).json({ code: 'e002', message: 'Invalid body params' });
+
+            await models.Question.update({
+                status: status
+            }, {
+                where: {
+                    id: questionId
+                }
+            });
+            
+            const updatedQuestion = await models.Question.findByPk(questionId);
+
+            return res.status(200).json(updatedQuestion);
+        }).catch(async (err) => {
+            return res.status(500).json(err);
+        });
+    }
 }
 
 module.exports = EducatorController;

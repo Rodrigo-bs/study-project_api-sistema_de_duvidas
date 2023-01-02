@@ -14,5 +14,6 @@ routes.get('/' + process.env.EDUCATOR_ROUTE_PREFIX + '/:educatorID/question/', E
 
 routes.post('/' + process.env.EDUCATOR_ROUTE_PREFIX + '/', EducatorController.create);
 routes.put('/' + process.env.EDUCATOR_ROUTE_PREFIX + '/:educatorID', EducatorController.update);
+routes.put('/' + process.env.EDUCATOR_ROUTE_PREFIX + '/:educatorID/question/:questionID/status/update', EducatorController.changeQuestionStatus);
 
 module.exports = routes;
