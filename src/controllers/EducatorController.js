@@ -32,7 +32,7 @@ class EducatorController {
     }
 
     static async selectById(req, res) {
-        const educatorId = req.params.id;
+        const educatorId = req.params.educatorID;
 
         try {
             const educator = await models.Educator.findByPk(educatorId);
@@ -46,11 +46,10 @@ class EducatorController {
     static async update(req, res) {
         req.body.password = await crypto.hash(req.body.password)
 
-        const educatorId = req.params.id;
+        const educatorId = req.params.educatorID;
         const educatorNewInfos = req.body;
 
         try {
-            console.log(educatorId);
             await models.Educator.update(educatorNewInfos, {
                 where: {
                     id: educatorId 
@@ -66,7 +65,7 @@ class EducatorController {
     }
 
     static async delete(req, res) {
-        const educatorId = req.params.id;
+        const educatorId = req.params.educatorID;
 
         try {
             await models.Educator.destroy({
@@ -76,6 +75,22 @@ class EducatorController {
             }); 
 
             return res.status(200).json({ message: `ID ${educatorId} deleted` });
+        } catch (error) {
+            return res.status(500).json(error);
+        }
+    }
+
+    static async selectAllQuestions(req, res) {
+        const educatorId = req.params.educatorID;
+
+        try {
+            const questions = await models.Question.findAll({
+                where: {
+                    educator_id: educatorId
+                }
+            });
+
+            return res.status(200).json(questions);
         } catch (error) {
             return res.status(500).json(error);
         }

@@ -1,7 +1,9 @@
 const educatorRoutes = require('./educatorRoutes.js');
+const questionRoutes = require('./questionRoutes.js');
 
 const routes = [
-    educatorRoutes
+    educatorRoutes,
+    questionRoutes
 ];
 
 module.exports = routes;
